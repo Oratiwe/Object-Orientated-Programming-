@@ -1,24 +1,22 @@
-const Person ={
-    firsName: "Alice",
-     
+class Person {
+    constructor(name, id) {
+        this.name = name;
+        this.id = id;
+    }
 
-// access property (getter)
-get getName (){
-    return this.firsName;
+    addAddress(address){
+        this.address = address;
+    }
 
-const Person =(
-
-
-    set changesName(newPerson)
-    this.firsName=(newName)
-    
-    
+    getDetails(){
+        console.log(`Name of the person is ${this.name}, 
+        residing at ${this.address}`)
+    }
 }
-}
-console.log (Person)
-console.log(Person.firsName)
-console.log(Person.getName)
 
+let person1 = new Person("Bob", 10);
+person1.addAddress("Limpopo");
+person1.getDetails();
 
 
 
